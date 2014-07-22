@@ -9,13 +9,13 @@
 
 	uploadify.uploadify({
 		auto: false,
-		buttonImage: {$interface->baseUrl|escapeJS|noescape} + '/imgs/uploadifyButton.png',
+		//buttonImage: {$interface->baseUrl|escapeJS|noescape} + '/imgs/uploadifyButton.png',
 		fileSizeLimit: {$sizeLimit|escapeJS|noescape},
 		formData: {
 			token: {$token|escapeJS|noescape},
 			sender: 'MFU-Uploadify'
 		},
-		height: 22,
+		/*height: 22,*/
 		method: 'post',
 		multi: true,
 		overrideEvents: ['onQueueComplete'],
@@ -25,7 +25,7 @@
 		swf: {$interface->baseUrl|escapeJS|noescape} + '/swf/uploadify.swf',
 		uploader: {$backLink|escapeJS|noescape},
                 fileTypeExts: {$fileTypes|escapeJS|noescape},
-		width: 70,
+		/*width: 70,*/
 
 		/**
 		 * Triggered when all files in the queue have been processed.
