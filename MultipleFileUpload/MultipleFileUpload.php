@@ -263,6 +263,12 @@ class MultipleFileUpload extends UploadControl
          * @var string
          */
         public $fileTypes;
+        
+        /**
+         * File type desc
+         * @var string
+         */
+        public $fileTypeDesc;
 
 
         /**

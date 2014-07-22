@@ -84,6 +84,7 @@ class Controller extends \MultipleFileUpload\UI\AbstractInterface
 		$tpl->token = $upload->getToken();
 		$tpl->maxFiles = $upload->maxFiles;
 		$tpl->fileTypes = $upload->fileTypes;
+		$tpl->fileTypeDesc = $upload->fileTypeDesc;
 		$tpl->backLink = (string) $upload->form->action;
 		$tpl->uploadifyId = $upload->getHtmlId() . "-uploadifyBox";
 		$tpl->simUploadFiles = $upload->simUploadThreads;
