@@ -24,8 +24,12 @@
 		removeCompleted: true,
 		swf: {$interface->baseUrl|escapeJS|noescape} + '/swf/uploadify.swf',
 		uploader: {$backLink|escapeJS|noescape},
-                fileTypeDesc: {$fileTypeDesc|escapeJS},
-                fileTypeExts: {$fileTypes|escapeJS},
+                {ifset $fileTypeDesc}
+                    fileTypeDesc: {$fileTypeDesc|escapeJS|noescape},
+                {/ifset}
+                {ifset $fileTypes}
+                    fileTypeExts: {$fileTypes|escapeJS|noescape},
+                {/ifset}
 		/*width: 70,*/
 
 		/**
